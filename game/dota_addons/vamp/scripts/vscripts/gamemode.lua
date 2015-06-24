@@ -12,4 +12,13 @@ function _VampMode:InitGameMode()
 	GameRules:SetPreGameTime(PRE_GAME_TIME)
 	GameRules:SetCustomGameSetupRemainingTime(0)
 	GameRules:SetCustomGameSetupAutoLaunchDelay(0)
+
+	ListenToGameEvent("game_rules_state_change", Dynamic_Wrap(_VampMode, "Testing"), self)
+
+end
+
+function _VampMode:Testing(keys)
+	if GameRules:State_Get() == DOTA_GAMERULES_STATE_GAME_IN_PROGRESS then
+		print("yo")
+	end
 end
