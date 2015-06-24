@@ -1,0 +1,170 @@
+"DOTAUnits"
+{
+	"Version"	"1"
+
+	"wave_walker"
+	{
+		//============================GENERAL==============================
+		"BaseClass"			"npc_dota_creature"
+		"Model"				"models/heroes/dragon_knight/dragon_knight.vmdl"
+		"ModelScale"		"0.8"
+		"Level"				"32"
+		"HealthBarOffset" 	"140"	
+		"UnitLabel"			"wave_unit"
+		"IsNeutralUnitType"	"1"
+		"AutoAttacksByDefault" 	"1"
+		"SoundSet"			"Hero_DragonKnight"
+		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_dragon_knight.vsndevts"
+
+		"MovementCapabilities"  "DOTA_UNIT_CAP_MOVE_GROUND"
+        "MovementSpeed"         "300"
+        "MovementTurnRate"      "1"
+
+		"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
+		"AttackRange"			"90"
+		"AttackDamageMin"		"50"
+		"AttackDamageMax"		"50"
+
+		"AttributeBaseStrength"        "2"            // Base strength
+		"AttributeStrengthGain"        "0"            // Strength bonus per level.
+		"AttributeBaseAgility"         "1"            // Base agility
+		"AttributeAgilityGain"         "0"            // Agility bonus per level.
+		"AttributeBaseIntelligence"    "3"            // Base intelligence
+		"AttributeIntelligenceGain"    "0"            // Intelligence bonus per level.
+
+
+		"BountyXP"				"0"
+		"BountyGoldMin"			"50"
+		"BountyGoldMax"			"70"
+
+		"Creature"
+		{
+
+			"AttachWearables"
+			{
+    			"Wearable1" { "ItemDef" "63" }
+    			"Wearable2" { "ItemDef" "64" }
+  		  		"Wearable3" { "ItemDef" "65" }
+    			"Wearable4" { "ItemDef" "66" }
+    			"Wearable5" { "ItemDef" "67" }
+    			"Wearable6" { "ItemDef" "68" }
+			}
+		}
+
+
+	}
+
+
+
+	//=================================================================================
+    // Creature: Guardian of Fire
+    //=================================================================================
+    "npc_dota_creature_guardian_fire"
+    {
+        // General
+        //----------------------------------------------------------------
+        "Model"                        "models/items/warlock/golem/doom_of_ithogoaki/doom_of_ithogoaki.vmdl"    // Model.
+        "BaseClass"                    "npc_dota_creature"
+        "SoundSet"                    "Creep_Bad_Range"
+        "GameSoundsFile"            "soundevents/game_sounds_creeps.vsndevts"
+        "Level"                        "4"
+        "ModelScale"                 "1.0"
+        "CanBeDominated"            "0"
+
+        // Abilities
+        //----------------------------------------------------------------
+        "Ability1"                    "forged_spirit_melting_strike"            // Ability 1
+        "Ability2"                    ""            // Ability 2
+        "Ability3"                    ""            // Ability 3
+        "Ability4"                    ""            // Ability 4
+
+        // Armor
+        //----------------------------------------------------------------
+        "ArmorPhysical"                "5"            // Physical protection.
+        "MagicalResistance"            "25"        // Percentage
+
+        // Attack
+        //----------------------------------------------------------------
+        "AttackCapabilities"        "DOTA_UNIT_CAP_RANGED_ATTACK"
+        "AttackDamageMin"            "55"        // Damage range min.
+        "AttackDamageMax"            "100"        // Damage range max.
+        "AttackRate"                "1.5"        // Speed of attack.
+        "AttackAnimationPoint"        "0.4"        // Normalized time in animation cycle to attack.
+        "AttackAcquisitionRange"    "800"        // Range within a target can be acquired.
+        "AttackRange"                "600"        // Range within a target can be attacked.
+        "ProjectileModel"            "particles/units/heroes/hero_invoker/invoker_forged_spirit_projectile.vpcf" // Particle system model for projectile.
+        "ProjectileSpeed"            "1100"        // Speed of projectile.       
+
+        // Bounds
+        //----------------------------------------------------------------
+        "BoundsHullName"            "DOTA_HULL_SIZE_HERO"            // Hull type used for navigation/locomotion.
+        "RingRadius"                "80"
+        "HealthBarOffset"            "200"
+
+        // Bounty
+        //----------------------------------------------------------------
+        "BountyXP"                    "500"        // Experience earn.
+        "BountyGoldMin"                "150"        // Gold earned min.
+        "BountyGoldMax"                "300"        // Gold earned max.       
+
+        // Status
+        //----------------------------------------------------------------
+        "StatusHealth"                "2500"        // Base health.
+        "StatusHealthRegen"            "3"        // Health regeneration rate.
+        "StatusMana"                "200"            // Base mana.
+        "StatusManaRegen"            "30.0"        // Mana regeneration rate.     
+   
+        // Vision
+        //----------------------------------------------------------------
+        "VisionDaytimeRange"        "1800"        // Range of vision during day light.
+        "VisionNighttimeRange"        "800"        // Range of vision at night time.
+
+        // Team
+        //----------------------------------------------------------------
+        "TeamName"                    "DOTA_TEAM_NEUTRALS"                        // Team name.
+        "CombatClassAttack"            "DOTA_COMBAT_CLASS_ATTACK_BASIC"
+        "CombatClassDefend"            "DOTA_COMBAT_CLASS_DEFEND_BASIC"
+        "UnitRelationshipClass"        "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+
+        // Inventory
+        //----------------------------------------------------------------
+        "HasInventory"                "0"
+
+        // Movement
+        //----------------------------------------------------------------
+        "MovementCapabilities"        "DOTA_UNIT_CAP_MOVE_GROUND"
+        "MovementSpeed"                "300"        // Speed.
+
+        // Creature Data
+        //----------------------------------------------------------------
+        "Creature"
+        {
+            "CanRespawn"                "1"
+            "DefaultState"                "Invade"
+            "States"
+            {
+                "Invade"
+                {
+                    "Name"                "Invade"
+                    "Aggression"        "100.0"
+                    "Avoidance"            "0.0"
+                    "Support"            "0.0"
+                }
+            }
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
