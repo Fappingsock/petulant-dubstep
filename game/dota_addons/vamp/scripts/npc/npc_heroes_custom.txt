@@ -30,15 +30,15 @@
     "MagicalResistance"       "12"                 // Magical protection (percentage).
 
     "AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
-    "AttackDamageMin"     "25"                   // Damage range min.
-    "AttackDamageMax"     "25"                   // Damage range max.
+    "AttackDamageMin"     "50"                   // Damage range min.
+    "AttackDamageMax"     "50"                   // Damage range max.
 
     //"AttributePrimary"      "DOTA_ATTRIBUTE_AGILITY"
-    "AttributeBaseStrength"   "20"                   // Base strength
+    "AttributeBaseStrength"   "0"                   // Base strength
     "AttributeStrengthGain"   "0"                   // Strength bonus per level.
-    "AttributeBaseIntelligence" "20"                   // Base intelligence
+    "AttributeBaseIntelligence" "0"                   // Base intelligence
     "AttributeIntelligenceGain" "0"                   // Intelligence bonus per level.
-    "AttributeBaseAgility"    "20"                   // Base agility
+    "AttributeBaseAgility"    "0"                   // Base agility
     "AttributeAgilityGain"    "0"                   // Agility bonus per level.
 
     "BountyXP"          "0"                 // Experience earn.
@@ -89,15 +89,15 @@
     "MagicalResistance"       "12"                 // Magical protection (percentage).
 
     "AttackCapabilities"    "DOTA_UNIT_CAP_NO_ATTACK"
-    "AttackDamageMin"     "25"                   // Damage range min.
-    "AttackDamageMax"     "25"                   // Damage range max.
+    "AttackDamageMin"     "50"                   // Damage range min.
+    "AttackDamageMax"     "50"                   // Damage range max.
 
     //"AttributePrimary"      "DOTA_ATTRIBUTE_AGILITY"
-    "AttributeBaseStrength"   "20"                   // Base strength
+    "AttributeBaseStrength"   "0"                   // Base strength
     "AttributeStrengthGain"   "0"                   // Strength bonus per level.
-    "AttributeBaseIntelligence" "20"                   // Base intelligence
+    "AttributeBaseIntelligence" "0"                   // Base intelligence
     "AttributeIntelligenceGain" "0"                   // Intelligence bonus per level.
-    "AttributeBaseAgility"    "20"                   // Base agility
+    "AttributeBaseAgility"    "0"                   // Base agility
     "AttributeAgilityGain"    "0"                   // Agility bonus per level.
 
     "BountyXP"          "0"                 // Experience earn.
