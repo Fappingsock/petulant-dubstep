@@ -1,0 +1,12 @@
+"addon"
+{
+	"Unassigned"      								"Unassigned "
+	"Spectator"       								"Spectator "
+	"Neutrals"        								"Neutral "
+	"NoTeam"          								"No "
+
+	"DOTA_GoodGuys"   								"Slayers"
+	"DOTA_BadGuys"    								"Vampires"
+
+	"addonname"										"Vampirism Fire"
+}
