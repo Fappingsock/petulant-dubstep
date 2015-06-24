@@ -6,6 +6,6 @@
 "CustomHeroList"
 {
 
-  "npc_dota_hero_abaddon" "1"
-  "npc_dota_hero_io"	"1"
+  "npc_dota_hero_night_stalker" "1"
+  "npc_dota_hero_wisp"	"1"
 }
